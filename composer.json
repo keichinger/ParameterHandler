@@ -10,14 +10,21 @@
             "email": "stof@notk.org"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:keichinger/composer.git"
+        }
+    ],
+    "minimum-stability": "beta",
     "require": {
         "php": ">=5.3.3",
-        "symfony/yaml": "~2.3|~3.0"
+        "symfony/yaml": "^4.0.0-BETA1"
     },
     "require-dev": {
-        "composer/composer": "1.0.*@dev",
+        "composer/composer": "dev-symfony-4.0#a851df383efa46f38bfd64846ecda7a836941a19",
         "phpspec/prophecy-phpunit": "~1.0",
-        "symfony/filesystem": "~2.2"
+        "symfony/filesystem": "^4.0.0-BETA1"
     },
     "autoload": {
         "psr-4": { "Incenteev\\ParameterHandler\\": "" }
